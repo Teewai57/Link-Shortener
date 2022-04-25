@@ -2,6 +2,9 @@ body{
     font-family: 'Poppins', sans-serif;
     background-color: rgb(224, 231, 235);
 }
+.topSection{
+    background-image: linear-gradient(white 94%, rgb(224, 231, 235) 6% );
+}
 .navbar-brand{
     font-size: 28px;
     font-weight: bolder;
@@ -84,6 +87,12 @@ body{
 .card-title{
     margin-top: 40px;
 }
+/* .absolute-line{
+    position: absolute;
+}
+.card{
+    position: relative;
+} */
 @media (max-width:768px) {
     img{
         display: none;
