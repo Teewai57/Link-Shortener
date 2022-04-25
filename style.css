@@ -13,6 +13,16 @@ body{
     font-size: 14px;
     font-weight: bold;
 }
+.navTexts{
+    font-size: 15px;
+    font-weight: bold;
+}
+.sign{
+    color: white;
+}
+.sign:hover{
+    color: white;
+}
 .btn{
     background-color: rgb(30, 172, 172);
     border-radius: 20px;
@@ -79,6 +89,9 @@ body{
     margin-left: 20px;
     color: white;
 }
+.card{
+    position: relative !important;
+}
 .icon{
     text-align: center;
     margin-top: 25px;
@@ -87,14 +100,12 @@ body{
 .card-title{
     margin-top: 40px;
 }
-/* .absolute-line{
-    position: absolute;
-}
-.card{
-    position: relative;
-} */
 @media (max-width:768px) {
     img{
         display: none;
     }
+    /* .round{
+        position: absolute;
+        bottom: 290px !important;
+    } */
 }
