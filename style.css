@@ -56,9 +56,13 @@ body{
 }
 .boost{
     margin-top: 100px !important;
-    background-color: rgb(18, 26, 26);
+    background-color: rgb(33, 48, 48);
     color: white;
     padding: 20px;
+}
+.last{
+    background-color: rgb(18, 26, 26);
+    color: white;
 }
 /* .second{
     position: absolute;
