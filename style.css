@@ -34,7 +34,7 @@ body{
 }
 .placeHolder{
     background-color: rgb(18, 26, 26);
-    padding: 25px !important;
+    padding: 19px !important;
     width: 100%;
     border-radius: 15px;
 }
@@ -58,6 +58,24 @@ body{
 .second_card{
     margin-top: 40px;
 }
+.second_card:before{
+    content: '';
+    margin-top: 90px;
+    position: absolute;
+    background-color: rgb(30, 172, 172);
+    height: 6px;
+    width: 30px;
+    margin-left: -31px;
+}
+.third_card:before{
+    content: '';
+    margin-top: 50px;
+    position: absolute;
+    background-color: rgb(30, 172, 172);
+    height: 6px;
+    width: 30px;
+    margin-left: -31px;
+}
 .third_card{
     margin-top: 80px;
 }
@@ -80,21 +98,41 @@ body{
 .round{
     width: 70px;
     height: 70px;
-    border-radius: 100%;
+    border-radius: 50%;
     background-color: rgb(33, 48, 48);
-    text-align: center;
     justify-content: center;
     position: absolute;
-    bottom: 200px;
+    margin-top: -60px;
     margin-left: 20px;
     color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.wrap p{
+    font-size: 14px;
+        font-weight: 400;
+        word-wrap: break-word;
+        width: 500px;
+        text-align: center;
+        align-items: center;
+        
+}
+.s_icon{
+    margin-top: -28px;
+}
+.t_icon{
+margin-top: -25px;
 }
 .card{
     position: relative !important;
 }
 .icon{
     text-align: center;
-    margin-top: 25px;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    /* margin-top: 25px; */
     font-size: 25px !important;
 }
 .card-title{
@@ -102,10 +140,41 @@ body{
 }
 @media (max-width:768px) {
     img{
+        /* display: none; */
+    }
+    .intro h1{
+        font-size: 20px;
+        /* display: flex; */
+        /* justify-content: center; */
+    }
+    .intro p{
+        font-size: 14px;
+        word-wrap: break-word;
+    }
+    .intro button{
+        position: relative;
+        bottom: 30px;
+        width: 150px;
+        font-size: 13px;
+    }
+    .placeHolder{
+        height: 120px;
+    }
+    .form-control{
+        height: 30px;
+        font-size: 14px;
+    }
+    .shorten{
+        width: 100px;
+        height: 50px;
+        padding: -10px;
+    }
+}
+@media (max-width:425px) {
+    .second_card:before{
         display: none;
     }
-    /* .round{
-        position: absolute;
-        bottom: 290px !important;
-    } */
+    .third_card:before{
+        display: none;
+    }
 }
