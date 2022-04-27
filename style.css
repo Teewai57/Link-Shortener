@@ -132,20 +132,15 @@ margin-top: -25px;
     align-self: center;
     display: flex;
     justify-content: center;
-    /* margin-top: 25px; */
     font-size: 25px !important;
 }
 .card-title{
     margin-top: 40px;
 }
 @media (max-width:768px) {
-    img{
-        /* display: none; */
-    }
+
     .intro h1{
         font-size: 20px;
-        /* display: flex; */
-        /* justify-content: center; */
     }
     .intro p{
         font-size: 14px;
