@@ -64,13 +64,18 @@
             </div>
         </div>
     </div>
-    <div class="container pl-5 pr5 second ">
+    <div class="container pl-5 pr5 second" id="app">
         <div class="form-group row justify-content-between placeHolder">
-            <input type="text" class="form-control" name="" id="" aria-describedby="helpId"
+            <input type="text" class="form-control" name="" v-model="urlInput" id="" aria-describedby="helpId"
                 placeholder="Shorten a link here...">
-            <button class="shorten">Shorten It</button>
+            <button class="shorten" @click="getUrl">Shorten It</button>
+        </div>
+        <div class=" shortened_link text-white ">
+                <h5 class="p-2">Shortened link..</h5>
+                <p class="p-2"> {{displayUrl}} </p>
         </div>
     </div>
+
    </section>
 
     <div class="container second mb-5">
@@ -164,6 +169,9 @@
     </div>
 
     <!-- Optional JavaScript -->
+    <script src="https://unpkg.com/vue@3"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="/index.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
